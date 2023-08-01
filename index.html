@@ -16,7 +16,7 @@
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #FADC00" ;>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FADC00" ;>
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Aroma</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,42 +25,31 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+                    <li class="nav-item mx-lg-3">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#about">About</a>
+
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#menu">Menu</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#location">Location</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item mx-lg-3">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <!-- NavBar -->
 
     <!-- Banner -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5" id="home">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <h1 class="text-large text-center pt-5 mt-5"> <span>Aroma</span> Kitchen</h1>
@@ -73,7 +62,7 @@
     <!-- Banner -->
 
     <!-- About -->
-    <div class="container-fluid second">
+    <div class="container-fluid second" id="about">
         <h4 class="text-center mt-5 pt-5">About Aroma</h4>
         <h2 class="mt-3 p-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             laborum
@@ -87,7 +76,7 @@
     <!-- About -->
 
     <!--Menu  -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="menu">
         <h3 class="name2 text-center">Menu</h3>
         <div class="row mt-5 ">
             <div class="col-md-3 col-sm-12 p-3">
@@ -212,7 +201,7 @@
     <!--Explore  -->
 
     <!-- Map -->
-    <div class="container-fluid mt-5 pt-5">
+    <div class="container-fluid mt-5 pt-5" id="location">
         <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0"
                 src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sonacs%20street,%20Bamenda,%20Cameroon+(Aroma%20kitchen)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 width="100%" height="600" frameborder="0"><a href="https://www.maps.ie/population/">Population
@@ -221,7 +210,7 @@
     <!-- Map -->
 
     <!-- Some Contact -->
-    <div class="container-fluid p-5 my-5 text-center">
+    <div class="container-fluid p-5 my-5 text-center" id="contact">
         <a href="#" class="btn btn-outline-dark text-success contactbtn m-2"><i class="fa-solid fa-phone p-1"></i></a>
         <a href="#" class="btn btn-outline-dark text-primary contactbtn m-2"><i
                 class="fa-brands fa-facebook p-1"></i></a>
